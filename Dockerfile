@@ -20,6 +20,7 @@ RUN apt-get update \
 	&& apt-get autoremove -y \
 		build-essential \
 		python3-dev \
+	&& apt-get autoremove -y \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& useradd -c Nikola -m -s /bin/bash nikola
 
